@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEC340EA2D1C85CD009FA206 /* ClaculatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC340E92D1C85CD009FA206 /* ClaculatorManager.swift */; };
 		CEF79DA72D147AFA00B19DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF79DA12D147AFA00B19DB4 /* Assets.xcassets */; };
 		CEF79DA92D147AFA00B19DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF79DA02D147AFA00B19DB4 /* AppDelegate.swift */; };
 		CEF79DAA2D147AFA00B19DB4 /* Button with drop Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF79DA22D147AFA00B19DB4 /* Button with drop Shadow.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEC340E92D1C85CD009FA206 /* ClaculatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaculatorManager.swift; sourceTree = "<group>"; };
 		CEF79D852D14776E00B19DB4 /* Calculator App (TeachMeSkillsHomeWork).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator App (TeachMeSkillsHomeWork).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF79DA02D147AFA00B19DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF79DA12D147AFA00B19DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CED5A15E2D1C980000BF3581 /* Singletone */ = {
+			isa = PBXGroup;
+			children = (
+				CEC340E92D1C85CD009FA206 /* ClaculatorManager.swift */,
+			);
+			path = Singletone;
+			sourceTree = "<group>";
+		};
 		CEF79D7C2D14776E00B19DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +66,9 @@
 		CEF79DA62D147AFA00B19DB4 /* Calculator App (TeachMeSkillsHomeWork) */ = {
 			isa = PBXGroup;
 			children = (
-				CEF79DAD2D147B0500B19DB4 /* App */,
+				CED5A15E2D1C980000BF3581 /* Singletone */,
 				CEF79DAE2D147B7100B19DB4 /* ViewControllers */,
+				CEF79DAD2D147B0500B19DB4 /* App */,
 				CEF79DA12D147AFA00B19DB4 /* Assets.xcassets */,
 			);
 			path = "Calculator App (TeachMeSkillsHomeWork)";
@@ -168,6 +179,7 @@
 				CEF79DAA2D147AFA00B19DB4 /* Button with drop Shadow.swift in Sources */,
 				CEF79DAB2D147AFA00B19DB4 /* SceneDelegate.swift in Sources */,
 				CEF79DAC2D147AFA00B19DB4 /* ViewController.swift in Sources */,
+				CEC340EA2D1C85CD009FA206 /* ClaculatorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
