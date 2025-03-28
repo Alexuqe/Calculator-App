@@ -47,7 +47,7 @@ final class ViewController: UIViewController {
     private let multiplyButton = ButtonWithDropShadow().getButton(with: "×")
     private let separationButton = ButtonWithDropShadow().getButton(with: "÷")
     private let percentButton = ButtonWithDropShadow().getButton(with: "%")
-    private let togleNumberEquale = ButtonWithDropShadow().getButton(with: "+/-")
+    private let togleNumberEqual = ButtonWithDropShadow().getButton(with: "+/-")
     private let dotButton = ButtonWithDropShadow().getButton(with: ".")
 
     private let cancelButton = ButtonWithDropShadow().getButton(with: "C")
@@ -60,7 +60,7 @@ final class ViewController: UIViewController {
         numberSeven, numberEight, numberNine, multiplyButton,
     ]
     private lazy var topRowButtons: [UIView] = [
-        cancelButton, togleNumberEquale, percentButton, separationButton,
+        cancelButton, togleNumberEqual, percentButton, separationButton,
     ]
     private lazy var operationColumsLabels: [UIView] = [secondaryOperationLabel, operationLabel]
 
@@ -122,9 +122,8 @@ extension ViewController {
         getSized(element: multiplyButton)
         getSized(element: percentButton)
         getSized(element: cancelButton)
-        getSized(element: togleNumberEquale)
+        getSized(element: togleNumberEqual)
 
-        setupButtonActions()
     }
 
         //MARK: - UI Constraints
@@ -261,7 +260,7 @@ extension ViewController {
             // Special operations
         equallyButton.addTarget(self, action: #selector(equalPressed), for: .touchUpInside)
         cancelButton.addTarget(self, action: #selector(clearPressed), for: .touchUpInside)
-        togleNumberEquale.addTarget(self, action: #selector(togglePressed), for: .touchUpInside)
+        togleNumberEqual.addTarget(self, action: #selector(togglePressed), for: .touchUpInside)
         dotButton.addTarget(self, action: #selector(decimalPressed), for: .touchUpInside)
     }
 
